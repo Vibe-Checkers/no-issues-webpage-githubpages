@@ -300,6 +300,30 @@ section {
     gap: 2rem;
 }
 
+.reports-grid + .reports-subtitle {
+    margin-top: 3rem;
+}
+
+.reports-subtitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border);
+    position: relative;
+}
+
+.reports-subtitle::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
 .report-card {
     background: var(--bg-light);
     padding: 2rem;
